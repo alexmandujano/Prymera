@@ -11,7 +11,7 @@ class Admin_Bitacora(admin.ModelAdmin):
 	list_display=('FECHA','FECHA_ENVIO','H_RECEPCION','H_INICIO','H_FIN','ASUNTO','DETALLLE','USUARIO_S','USUARIO_R','USUARIO_A','USUARIO','ESTADO','MEDIO','OPCION','OTRA_AREA')
 	actions = [export_as_csv_action("CSV Export", 
 		fields=['FECHA','H_RECEPCION','H_INICIO','H_FIN','ASUNTO','DETALLLE','USUARIO_S','USUARIO_R','USUARIO_A','USUARIO','ESTADO','MEDIO','OPCION'])]
-	
+	search_fields=('ASUNTO','USUARIO_S','USUARIO_R','USUARIO_A','USUARIO')
 
 admin.site.register(Categoria)
 admin.site.register(Sub_categoria)
