@@ -21,3 +21,11 @@ admin.site.register(Opcion,Admin_Opciones)
 admin.site.register(Medio)
 admin.site.register(Estado)
 admin.site.register(Bitacora,Admin_Bitacora)
+
+#nuevo cambio
+admin.site.register(Evento)
+admin.site.register(Agencia)
+admin.site.register(Proceso)
+admin.site.register(Factor)
+admin.site.register(Opcion_Comunicacion)
+admin.site.register(Bitacora_Comunicacion)
